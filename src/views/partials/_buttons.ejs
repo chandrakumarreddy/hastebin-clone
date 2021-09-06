@@ -1,0 +1,35 @@
+<div class="buttons-wrapper">
+  <a href="/" class="logo">usebin</a>
+  <div class="buttons">
+    <button class="btn" type="submit">
+      <img src="/images/save.svg" width="24" height="24" />
+      <div class="btn-text save">
+        <h3>save</h3>
+      </div>
+    </button>
+    <a href="/">
+      <button class="btn" type="button">
+        <img src="/images/new.svg" width="24" height="24" />
+        <div class="btn-text new">
+          <h3>new</h3>
+        </div>
+      </button>
+    </a>
+    <a href="/<%= locals.id %>/duplicate" type="button">
+      <button class="btn">
+        <img src="/images/duplicate.svg" width="24" height="24" />
+        <div class="btn-text duplicate-edit">
+          <h3>Duplcate & Edit</h3>
+        </div>
+      </button>
+    </a>
+    <a href="/<%= locals.id %>/text">
+      <button class="btn only-text" type="button">
+        T
+        <div class="btn-text only-text">
+          <h3>only text</h3>
+        </div>
+      </button>
+    </a>
+  </div>
+</div>

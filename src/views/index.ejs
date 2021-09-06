@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>usebin</title>
+    <script src="https://cdn.jsdelivr.net/npm/autosize@4.0.2/dist/autosize.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <form action="/save" method="post">
+      <%- include('partials/_buttons.ejs', {canSave: true}) %>
+      <div class="wrapper">
+        <div class="line-number">&gt;</div>
+        <textarea name="value" autofocus><%= locals.value %></textarea>
+      </div>
+    </form>
+    <script>
+      autosize(document.querySelector("textarea"));
+    </script>
+  </body>
+</html>
